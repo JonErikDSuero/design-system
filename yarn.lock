@@ -2382,7 +2382,7 @@
     read-pkg-up "^4.0.0"
     regenerator-runtime "^0.12.1"
 
-"@storybook/addon-storysource@^5.0.11":
+"@storybook/addon-storysource@^5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-5.1.9.tgz#c3a7a8b65080b6bb71c43c30dfab639aba10d271"
   integrity sha512-UHhF2IqaJYfKaRMLUVJboerObGzxs0zj0X2EJTnTKUL3by1/ksvdMQ3cf3525XUk08PW7nW1HAqBeZo7wAbC7w==
@@ -2398,6 +2398,22 @@
     prop-types "^15.7.2"
     react-syntax-highlighter "^8.0.1"
     regenerator-runtime "^0.12.1"
+
+"@storybook/addon-viewport@^5.1.9":
+  version "5.1.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-5.1.9.tgz#509819730ae99a9e08d1e1f71e8e567b068da01c"
+  integrity sha512-0EEsZ7rWTj3q3M8AFjm6dXjQPS0w4gto8clMzGzdLHXA6D6KG3w10t9XsVr4mxve7PrEpiFXc6mhqsg7wbTDnQ==
+  dependencies:
+    "@storybook/addons" "5.1.9"
+    "@storybook/client-logger" "5.1.9"
+    "@storybook/components" "5.1.9"
+    "@storybook/core-events" "5.1.9"
+    "@storybook/theming" "5.1.9"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    prop-types "^15.7.2"
+    util-deprecate "^1.0.2"
 
 "@storybook/addons@5.0.11":
   version "5.0.11"
@@ -2605,7 +2621,7 @@
     webpack-dev-middleware "^3.7.0"
     webpack-hot-middleware "^2.25.0"
 
-"@storybook/html@^5.0.11":
+"@storybook/html@^5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/html/-/html-5.1.9.tgz#0e0d8d88064f5d06ab6e7c6a15ff08e56cda0ee9"
   integrity sha512-fXGRcUfBOuo8ZoH3XPzRwxjFdmMBmcK7n02gybuwHKmpGLnhZlxkTn1+exSEsYH1ZweMRPFpS9xXTGcoJDhIWw==
@@ -2639,7 +2655,7 @@
     pretty-hrtime "^1.0.3"
     regenerator-runtime "^0.12.1"
 
-"@storybook/react@^5.0.11":
+"@storybook/react@^5.1.9":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-5.1.9.tgz#4052f4b88e91d5a823bb9cbb61104c530fcfb1a1"
   integrity sha512-Byykpsttf6p2jv3LvqFtntEYfbUZSNTts0TjcZHNsHoUGmT7/M1PyqTeB7JUcYUNwSgdACY8FbowCrwZwDJDWQ==
@@ -8939,10 +8955,10 @@ gatsby-page-utils@^0.0.2:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-manifest@^2.0.9:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.0.tgz#e16d39bd415026594465e1763cc2abd43729a7d1"
-  integrity sha512-VcSe6cT+H0pbll5l5rs8+AAdBnH4nsTJ81plvw/Oyn8WnsnWcD/c1RbQLSrTGl6CKGLlUtrwrPuYFNYe50AsZg==
+gatsby-plugin-manifest@^2.0.22:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.1.tgz#89d23587bfddbf3ce606fc353555d372cfc7d432"
+  integrity sha512-c+EIIUHMKb15G/8cKYZOq29MgtkJ5H2WcIs4mYyfetrhIkm9lVIIqmH3AlqKSqo0z6JA08D1IAJpvQmUk0SO/Q==
   dependencies:
     "@babel/runtime" "^7.0.0"
     semver "^5.6.0"
@@ -13650,7 +13666,21 @@ node-releases@^1.1.13, node-releases@^1.1.23:
   dependencies:
     semver "^5.3.0"
 
-node-sass@^4.10.0:
+node-sass-chokidar@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/node-sass-chokidar/-/node-sass-chokidar-1.3.5.tgz#79ffa685fa7f0125c9ee4a585ddd6cafc2d06eea"
+  integrity sha512-XfMtSN3oC6EOsPme3SjKVfFb7IJ5ZxroVGiNHMYz8Nvm3qH8zukDr3s328g3mBlyX+nQZMDQO9ZaRRyMdRtmyA==
+  dependencies:
+    async-foreach "^0.1.3"
+    chokidar "^2.0.4"
+    get-stdin "^4.0.1"
+    glob "^7.0.3"
+    meow "^3.7.0"
+    node-sass "4.12"
+    sass-graph "^2.1.1"
+    stdout-stream "^1.4.0"
+
+node-sass@4.12:
   version "4.12.0"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.12.0.tgz#0914f531932380114a30cc5fa4fa63233a25f017"
   integrity sha512-A1Iv4oN+Iel6EPv77/HddXErL2a+gZ4uBeZUy+a8O35CFYTXhgA8MgLCWBtwpGZdCvTvQ9d+bQxX/QC36GDPpQ==
@@ -16971,7 +17001,7 @@ sanitize-html@^1.18.2:
     srcset "^1.0.0"
     xtend "^4.0.1"
 
-sass-graph@^2.2.4:
+sass-graph@^2.1.1, sass-graph@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/sass-graph/-/sass-graph-2.2.4.tgz#13fbd63cd1caf0908b9fd93476ad43a51d1e0b49"
   integrity sha1-E/vWPNHK8JCLn9k0dq1DpR0eC0k=
